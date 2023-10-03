@@ -1,0 +1,220 @@
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 1.5rem;
+    height:1.5rem;
+}
+.logo h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.menu{
+    display: flex;
+    align-items: center; 
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+.nav__item{
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+.nav__icons span i{
+    color: var(--primary-color);
+    font-size: 1.4rem;  
+    cursor: pointer;
+}
+
+.cart__icon,
+.fav__icon{
+    position: relative;
+}
+.badge{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 15px;
+    height: 15px;
+    content: '';
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    z-index: 10;
+
+}
+
+.nav__icons .profile img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.nav__icons .profile{
+    position: relative;
+    z-index: 9;
+}
+.nav__icons .profile .profile__actions {
+    position: absolute;
+    top: 98%;
+    left: 3px;
+    width: 130px;
+    z-index: 10;
+    padding: 15px;
+    align-items: center;
+    flex-direction: column;
+    /* display: none;  */
+    background: var(--card-bg-02);
+    line-height: 30px;
+    cursor: pointer;
+}
+.profile {
+    position: relative;
+  }
+  
+  
+  /* Estilo para el menú de perfil */
+  .profile__actions {
+    position: absolute;
+    top: 60px; /* Ajusta la posición vertical según tus necesidades */
+    left: 0;
+    width: 150px; /* Ajusta el ancho según tus necesidades */
+    background-color: #ffffff; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde del menú */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: none; /* Inicialmente oculto */
+    z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+  }
+  
+  /* Estilo para mostrar el menú de perfil */
+  .profile__actions.show__profileActions {
+    display: block;
+  }
+  
+  /* Estilos para los elementos del menú */
+  .profile__actions span,
+  .profile__actions a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para los elementos del menú al pasar el ratón por encima */
+  .profile__actions span:hover,
+  .profile__actions a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+.mobile__menu{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+}
+.nav__active{
+    font-weight: 700 !important;
+}
+.sticky__header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    background: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Cambia esto para ocultar el menú inicialmente */
+        width: 250px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.53);
+        z-index: 9999;
+        transition: left 0.3s ease; /* Agrega una transición suave */
+      }
+    
+      .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%; /* Ajusta el ancho según tus necesidades */
+        height: 100%;
+        background: #fff;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .active__menu {
+        left: 0; /* Muestra el menú ajustando la posición izquierda */
+      }
+    .mobile__menu{
+        display: block;
+    }
+    .mobile__menu span i {
+        font-size: 1.1rem;
+    }
+    .logo h1{
+        font-size: 1rem;
+        height: 1rem;
+    }
+    .logo img{
+        width: 1rem;
+    }
+    .fav__icon i, .cart__icon i{
+        font-size: 1.2rem !important;
+    }
+    .nav__icons span i {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+}
