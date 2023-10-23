@@ -62,11 +62,11 @@ const ProductDeatils = () => {
                 <h2>{productName}</h2>
                 <div className='product__rating d-flex align-items-center gap-5 mb-4'>
                   <div>
-                    <span><i id='coral'  class="ri-star-fill"></i></span>
-                    <span><i id='coral' class="ri-star-fill"></i></span>
-                    <span><i id='coral' class="ri-star-fill"></i></span>
-                    <span><i id='coral' class="ri-star-fill"></i></span>
-                    <span><i id='coral' class="ri-star-half-s-line"></i></span>
+                    <span><i id='coral' className ="ri-star-fill"></i></span>
+                    <span><i id='coral' className="ri-star-fill"></i></span>
+                    <span><i id='coral' className="ri-star-fill"></i></span>
+                    <span><i id='coral' className="ri-star-fill"></i></span>
+                    <span><i id='coral' className="ri-star-half-s-line"></i></span>
                   </div>
 
                   <p>(<span>{avgRating}</span> Rating)</p>

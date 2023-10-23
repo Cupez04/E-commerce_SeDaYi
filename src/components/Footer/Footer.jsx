@@ -26,16 +26,16 @@ const Footer = () => {
               <h4 className="quick__links-title">Top Categories</h4>
               <ListGroup className='mb-3'>
                 <ListGroupItem className='ps-0 border-0'>
-                  <Link to="#">Mobile Phone</Link>
+                  <Link to="#">Jackets</Link>
                 </ListGroupItem>
                 <ListGroupItem className='ps-0 border-0'>
-                  <Link to="#">Modern Sofa</Link>
+                  <Link to="#">Dresses</Link>
                 </ListGroupItem>
                 <ListGroupItem className='ps-0 border-0'>
-                  <Link to="#">Arm Chair</Link>
+                  <Link to="#">Sweaters</Link>
                 </ListGroupItem>
                 <ListGroupItem className='ps-0 border-0'>
-                  <Link to="#">Smart Watches</Link>
+                  <Link to="#">Shoes</Link>
                 </ListGroupItem>
               </ListGroup>
             </div>
@@ -45,18 +45,18 @@ const Footer = () => {
               <h4 className="quick__links-title">Contact</h4>
               <ListGroup className='mb-3'>
                 <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
-                 <span className='text-white'><i class="ri-map-pin-line"></i></span>
+                 <span className='text-white'><i className="ri-map-pin-line"></i></span>
                   <p className='text-white'>Ventaquemada</p>
                 </ListGroupItem>
 
                 <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
-              <span className='text-white'><i class="ri-phone-line"></i></span>
+              <span className='text-white'><i className="ri-phone-line"></i></span>
                   <p className='text-white'>3135958070</p>
                 </ListGroupItem>
 
                 <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
-          <span className='text-white'><i class="ri-mail-line"></i></span>
-                  <p className='text-white'>sedanyishop@gmail.com</p>
+          <span className='text-white'><i className="ri-mail-line"></i></span>
+                  <p className='text-white'>sedayishop@gmail.com</p>
                 </ListGroupItem>
 
               </ListGroup>

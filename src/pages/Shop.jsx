@@ -11,24 +11,24 @@ const Shop = () => {
   
   const handleFilter = e => {
     const filterValue = e.target.value;
-    if(filterValue === 'sofa'){
-      const filteredProducts = products.filter(item => item.category === 'sofa')
+    if(filterValue === 'jackets'){
+      const filteredProducts = products.filter(item => item.category === 'jackets')
       setProductsData(filteredProducts);
     }
-    if(filterValue === 'chair'){
-      const filteredProducts = products.filter(item => item.category === 'chair')
+    if(filterValue === 'dresses'){
+      const filteredProducts = products.filter(item => item.category === 'dresses')
       setProductsData(filteredProducts);
     }
-    if(filterValue === 'mobile'){
-      const filteredProducts = products.filter(item => item.category === 'mobile')
+    if(filterValue === 'sweater'){
+      const filteredProducts = products.filter(item => item.category === 'sweater')
       setProductsData(filteredProducts);
     }
-    if(filterValue === 'wireless'){
-      const filteredProducts = products.filter(item => item.category === 'wireless')
+    if(filterValue === 'shoes'){
+      const filteredProducts = products.filter(item => item.category === 'shoes')
       setProductsData(filteredProducts);
     }
-    if(filterValue === 'watch'){
-      const filteredProducts = products.filter(item => item.category === 'watch')
+    if(filterValue === 'skirt'){
+      const filteredProducts = products.filter(item => item.category === 'skirt')
       setProductsData(filteredProducts);
     }
   }
@@ -47,11 +47,11 @@ const Shop = () => {
                   <div className="filter__widget">
                     <select onChange={handleFilter}>
                       <option>Filter by category</option>
-                      <option value="sofa">Sofa</option>
-                      <option value="mobile">Mobile</option>
-                      <option value="chair">Chair</option>
-                      <option value="watch">Watch</option>
-                      <option value="wireless">Wireless</option>
+                      <option value="jackets">Jackets</option>
+                      <option value="sweater">Sweater</option>
+                      <option value="dresses">Dresses</option>
+                      <option value="skirt">Skirt</option>
+                      <option value="shoes">shoes</option>
                     </select>
                   </div>
                 </Col>
@@ -67,7 +67,7 @@ const Shop = () => {
                 <Col lg="3" md="12">
                   <div className="search__box">
                     <input type="text" placeholder='Search ...' onChange={handleSearch}/>
-                    <span><i class="ri-search-line"></i></span>
+                    <span><i className="ri-search-line"></i></span>
                   </div>
                 </Col>
               </Row>

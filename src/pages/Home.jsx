@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from "react";
 import Helmet from "../components/Helmet/Helmet";
 import { Container, Row, Col } from "reactstrap";
-import heroImg from "../assets/images/hero-img.png"
+import heroImg from "../assets/images/bannershop.png"
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Services from "../services/Services";
 import ProductsList from "../components/UI/ProductsList";
 import products from "../assets/data/products";
-import counterImg from "../assets/images/counter-timer-img.png"
+import counterImg from "../assets/images/oferta.png"
 import Clock from "../components/UI/Clock";
 
 const Home = () => {
@@ -22,19 +22,19 @@ const Home = () => {
 
   useEffect(() => {
     const filteredTrendingProducts = products.filter(
-      (item) => item.category === "chair"
+      (item) => item.category === "dresses"
     );
     const filteredBestSalesProducts = products.filter(
-      (item) => item.category === "sofa"
+      (item) => item.category === "jackets"
     );
     const filteredMobileProducts = products.filter(
-      (item) => item.category === "mobile"
+      (item) => item.category === "sweater"
     );
     const filteredWirelessProducts = products.filter(
-      (item) => item.category === "wireless"
+      (item) => item.category === "shoes"
     );
     const filteredPopularProducts = products.filter(
-      (item) => item.category === "watch"
+      (item) => item.category === "skirt"
     )
     setTrendingProducts(filteredTrendingProducts);
     setBestSalesProducts(filteredBestSalesProducts);
@@ -52,7 +52,7 @@ const Home = () => {
             <Col lg="6" md="6">
               <div className="hero__content">
                 <p className="hero__subtitle">Trending product in {year}</p>
-                <h2>Make Your Interior More Minimalist</h2>
+                <h2>Transform Your Style with Elegance</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dignissimos autem consequatur quia esse iste ratione maxime impedit tenetur officiis.</p>
                 <motion.button whileTap={{scale:1.2}}  className="buy__btn"><Link to="/shop">Shop Now</Link></motion.button>
               </div>
@@ -65,8 +65,8 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* <Services/> */}
-        {/* <section className="trending__products">
+      { <Services/> }
+        <section className="trending__products">
           <Container>
             <Row>
               <Col lg="12" className="text-center">
@@ -93,7 +93,7 @@ const Home = () => {
                 <Col lg="6" md="12">
                   <div className="clock__top-content count-down">
                     <h4 className="text-white fs-6 mb-2">Limited Offers</h4>
-                    <h3 className="text-white fs-5 mb-3">Quality Armchair</h3>
+                    <h3 className="text-white fs-5 mb-3">Big Surprise Soon!</h3>
                   </div>
                   <Clock/>
                   <motion.button whileTap={{scale: 1.2}} className="buy__btn store__btn">
@@ -128,7 +128,7 @@ const Home = () => {
                 <ProductsList data={popular}/> 
               </Row>
             </Container>
-          </section> */}
+          </section>
     </Helmet>
   );
 };

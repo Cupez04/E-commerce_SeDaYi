@@ -1,40 +1,40 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../images/chaqueta1.jpg";
+import productImg02 from "../images/chaqueta2.jpg";
+import productImg03 from "../images/chaqueta3.jpg";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg04 from "../images/chaqueta5.jpg";
+import productImg05 from "../images/chaqueta4.jpg";
+import productImg06 from "../images/chaqueta1.jpg";
+import productImg007 from "../images/chaqueta5.jpg";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg07 from "../images/vestido1.jpg";
+import productImg08 from "../images/vestido2.jpg";
+import productImg09 from "../images/vestido3.jpg";
+import productImg10 from "../images/vestido4.jpg";
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg13 from "../images/sueter1.jpg";
+import productImg14 from "../images/sueter2.jpg";
+import productImg15 from "../images/sueter3.jpg";
+import productImg16 from "../images/sueter4.jpg";
+import productImg17 from "../images/sueter5.jpg";
+import productImg18 from "../images/sueter1.jpg";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
+import productImg19 from "../images/falda1.jpg";
+import productImg20 from "../images/falda2.jpg";
+import productImg21 from "../images/falda3.jpg";
+import productImg22 from "../images/falda4.jpg";
 
-import productImg23 from "../images/wireless-01.png";
+import productImg23 from "../images/tacon1.jpg";
 
-import productImg25 from "../images/wireless-03.png";
+import productImg25 from "../images/tacon2.jpg";
 
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "City Chic Jacket",
     imgUrl: productImg01,
-    category: "sofa",
-    price: 193,
+    category: "jackets",
+    price: 193, 
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -50,9 +50,9 @@ const products = [
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Fashion Forward Coat",
     imgUrl: productImg02,
-    category: "sofa",
+    category: "jackets",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -73,9 +73,9 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "Effortless Denim Jacket",
     imgUrl: productImg03,
-    category: "sofa",
+    category: "jackets",
     price: 173,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -95,9 +95,9 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Elegant Trench Coat",
     imgUrl: productImg02,
-    category: "sofa",
+    category: "jackets",
     price: 253,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -117,9 +117,9 @@ const products = [
   },
   {
     id: "04",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Quilted Outerwear",
     imgUrl: productImg04,
-    category: "sofa",
+    category: "jackets",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -140,9 +140,9 @@ const products = [
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
+    productName: "Statement Piece Blazer",
     imgUrl: productImg05,
-    category: "sofa",
+    category: "jackets",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -163,9 +163,9 @@ const products = [
 
   {
     id: "06",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Timeless Leather Jacket",
     imgUrl: productImg06,
-    category: "sofa",
+    category: "jackets",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -185,9 +185,9 @@ const products = [
   },
   {
     id: "07",
-    productName: "Sakarias Armchair",
+    productName: "Regal Silver Gown",
     imgUrl: productImg07,
-    category: "chair",
+    category: "dresses",
     price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -208,9 +208,9 @@ const products = [
 
   {
     id: "27",
-    productName: "Modern Arm Sofa",
+    productName: "Classic Tailored Blazer",
     imgUrl: productImg007,
-    category: "sofa",
+    category: "jackets",
     price: 173,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -231,9 +231,9 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "Classic Black Dress",
     imgUrl: productImg08,
-    category: "chair",
+    category: "dresses",
     price: 89,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -254,9 +254,9 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "Evening Gala Gown",
     imgUrl: productImg09,
-    category: "chair",
+    category: "dresses",
     price: 112,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -277,9 +277,9 @@ const products = [
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
+    productName: "Cozy Knit Sweater",
     imgUrl: productImg13,
-    category: "mobile",
+    category: "sweater",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -299,9 +299,9 @@ const products = [
   },
   {
     id: "25",
-    productName: "Sakarias Armchair",
+    productName: "Ivory Lace Elegance",
     imgUrl: productImg10,
-    category: "chair",
+    category: "dresses",
     price: 99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -321,9 +321,9 @@ const products = [
   },
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
+    productName: "Elegant Wool Pullover",
     imgUrl: productImg14,
-    category: "mobile",
+    category: "sweater",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -344,9 +344,9 @@ const products = [
 
   {
     id: "12",
-    productName: "Realme 8",
+    productName: "Chic Cardigan Buzo",
     imgUrl: productImg15,
-    category: "mobile",
+    category: "sweater",
     price: 599,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -367,9 +367,9 @@ const products = [
 
   {
     id: "13",
-    productName: "One Plus Nord",
+    productName: "Soft Knitwear Piece",
     imgUrl: productImg16,
-    category: "mobile",
+    category: "sweater",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -390,9 +390,9 @@ const products = [
 
   {
     id: "14",
-    productName: "Apple iPhone 13 Pro",
+    productName: "Warm Winter Sweater",
     imgUrl: productImg17,
-    category: "mobile",
+    category: "sweater",
     price: 899,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -413,9 +413,9 @@ const products = [
 
   {
     id: "15",
-    productName: "Samsung Galaxy S22",
+    productName: "Stylish Sweater Jacket",
     imgUrl: productImg18,
-    category: "mobile",
+    category: "sweater",
     price: 699,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -436,9 +436,9 @@ const products = [
 
   {
     id: "16",
-    productName: "Rolex Watch",
+    productName: "Denim Skirt Classic",
     imgUrl: productImg19,
-    category: "watch",
+    category: "skirt",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -459,9 +459,9 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Jeans Skirt Vintage",
     imgUrl: productImg20,
-    category: "watch",
+    category: "skirt",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -482,9 +482,9 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
+    productName: "Denim Skirt Trend",
     imgUrl: productImg21,
-    category: "watch",
+    category: "skirt",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -505,9 +505,9 @@ const products = [
 
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Denim Skirt Essentials",
     imgUrl: productImg22,
-    category: "watch",
+    category: "skirt",
     price: 399,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -528,9 +528,9 @@ const products = [
 
   {
     id: "20",
-    productName: "Beat Studio Wireless",
+    productName: "Seductive Stilettos",
     imgUrl: productImg23,
-    category: "wireless",
+    category: "shoes",
     price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -551,9 +551,9 @@ const products = [
 
   {
     id: "22",
-    productName: "Beat EP Headphones",
+    productName: "Classic Court Shoes",
     imgUrl: productImg25,
-    category: "wireless",
+    category: "shoes",
     price: 199,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
