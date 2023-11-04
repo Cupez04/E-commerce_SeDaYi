@@ -1,0 +1,1 @@
+export const getIsClick = (state) => state.clickeado

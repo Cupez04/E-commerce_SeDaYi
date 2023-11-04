@@ -31,7 +31,7 @@ import productImg25 from "../images/tacon2.jpg";
 const products = [
   {
     id: "01",
-    productName: "City Chic Jacket",
+    productName: "Chjhvhjvhv",
     imgUrl: productImg01,
     category: "jackets",
     price: 193, 
@@ -46,6 +46,7 @@ const products = [
       },
     ],
     avgRating: 4.5,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -69,6 +70,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -92,6 +94,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
   {
     id: "26",
@@ -114,6 +117,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
   {
     id: "04",
@@ -136,6 +140,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -159,6 +164,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -182,6 +188,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
   {
     id: "07",
@@ -204,6 +211,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -227,6 +235,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -250,6 +259,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+    addedToCart: false
   },
 
   {
@@ -273,6 +283,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -296,6 +307,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
   {
     id: "25",
@@ -318,6 +330,7 @@ const products = [
       },
     ],
     avgRating: 4.7,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
   {
     id: "11",
@@ -340,6 +353,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -363,6 +377,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -386,6 +401,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -409,6 +425,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -432,6 +449,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -455,6 +473,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -478,6 +497,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -501,6 +521,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -524,6 +545,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -547,6 +569,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 
   {
@@ -570,6 +593,7 @@ const products = [
       },
     ],
     avgRating: 4.8,
+     addedToCart: false // Nueva propiedad para seguimiento de carrito
   },
 ];
 

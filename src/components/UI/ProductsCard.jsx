@@ -9,7 +9,6 @@ import {  toast } from "react-toastify";
 
 const ProductsCard = ({ item }) => {
   const dispatch = useDispatch();
-
   const addToCart = () => {
     dispatch(
       cartActions.addItem({

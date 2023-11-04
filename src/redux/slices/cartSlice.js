@@ -4,6 +4,7 @@ const initialState = {
   cartItems: [],
   totalAmount: 0,
   totalQuantity: 0,
+  // clickeado: false,
 };
 
 const cartSlice = createSlice({
@@ -12,6 +13,7 @@ const cartSlice = createSlice({
   reducers: {
     addItem: (state, action) => {
       const newItem = action.payload;
+      // const response = state.clickeado= true;
       const existingItem = state.cartItems.find(
         (item) => item.id === newItem.id
       );
@@ -34,9 +36,10 @@ const cartSlice = createSlice({
         (total, item) => total + Number(item.price) * Number(item.quantity),
         0
       );
-      console.log(state.totalQuantity);
-      console.log(state.cartItems);
-      console.log(newItem)
+      // console.log(state.totalQuantity);
+      // console.log(state.cartItems);
+      // console.log(newItem);
+      // console.log(response);
     },
     deleteItem: (state, action) => {
       const id = action.payload;

@@ -10,38 +10,43 @@ import ProductsList from "../components/UI/ProductsList";
 import products from "../assets/data/products";
 import counterImg from "../assets/images/oferta.png"
 import Clock from "../components/UI/Clock";
+import { useSelector} from 'react-redux';
+// import Notiflix from "notiflix";
+
 
 const Home = () => {
-  const [trendingProducts, setTrendingProducts] = useState([]);
+
+  const [trendingProducts, setTrendingProducts] = useState([])
   const [bestSlesProducts, setBestSalesProducts] = useState([]);
   const [mobileProducts, setMobilePorducts] = useState([]);
   const [wirelessProducts, setWirelessProducts] = useState([]);
   const [popular, setPopular] = useState([]);
-
+  
+  const cartItems = useSelector((state) => state.cart.cartItems);
   const year = new Date().getFullYear();
 
   useEffect(() => {
-    const filteredTrendingProducts = products.filter(
-      (item) => item.category === "dresses"
-    );
-    const filteredBestSalesProducts = products.filter(
-      (item) => item.category === "jackets"
-    );
-    const filteredMobileProducts = products.filter(
-      (item) => item.category === "sweater"
-    );
-    const filteredWirelessProducts = products.filter(
-      (item) => item.category === "shoes"
-    );
-    const filteredPopularProducts = products.filter(
-      (item) => item.category === "skirt"
-    )
-    setTrendingProducts(filteredTrendingProducts);
-    setBestSalesProducts(filteredBestSalesProducts);
-    setMobilePorducts(filteredMobileProducts);
-    setWirelessProducts(filteredWirelessProducts);
-    setPopular(filteredPopularProducts);
-  },[]);
+
+
+  const filterProductsByCategory = (products, category) => {
+    const rta = cartItems.map((item) => item.id);
+    console.log(rta);
+    return products.filter((item) => item.category === category && !rta.includes(item.id));
+  };
+  
+
+  const filterProducto = filterProductsByCategory(products, "dresses");
+  const filteredBestSales = filterProductsByCategory(products, "jackets");
+  const filteredMobile = filterProductsByCategory(products, "sweater");
+  const filteredWireless = filterProductsByCategory(products, "shoes");
+  const filteredPopular = filterProductsByCategory(products, "skirt");
+
+  setTrendingProducts(filterProducto);
+  setBestSalesProducts(filteredBestSales);
+  setMobilePorducts(filteredMobile);
+  setWirelessProducts(filteredWireless);
+  setPopular(filteredPopular);
+  },[cartItems]);
 
 
   return (

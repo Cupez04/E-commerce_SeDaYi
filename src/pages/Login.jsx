@@ -27,7 +27,6 @@ const Login = () => {
       toast.success('Succesfull signIn');
       navigate('/checkout')
       
-
     } catch (error) {
       setLoading(false);
       toast.error(error.message);

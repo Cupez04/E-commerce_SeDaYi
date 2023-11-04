@@ -12,6 +12,7 @@ const Cart = () => {
   
   const cartItems = useSelector(state => state.cart.cartItems);
   const totalAmount = useSelector((state) => Number(state.cart.totalAmount));
+  // console.log(cartItems[2]);
 
   return (
     <Helmet title='Cart'>

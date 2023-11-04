@@ -10,6 +10,8 @@ import ProductsList from "../components/UI/ProductsList";
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../redux/slices/cartSlice';
 import { toast } from 'react-toastify';
+import { useSelector } from 'react-redux';
+import { getIsClick } from '../redux/slices/selector';
 
 const ProductDeatils = () => {
 
@@ -35,15 +37,23 @@ const ProductDeatils = () => {
     console.log(reviewObj);
     toast.success('review Submited')
   }  
-  const addToCart = () => {
-    dispatch(cartActions.addItem({
-      id, 
-      image: imgUrl,
-      productName,
-      price,
-    }))
-    toast.success('Producto añadido!')
-  }
+  // const isClick = useSelector(getIsClick);
+  // console.log(isClick);
+  const addToCart = ({ item }) => {
+    const updatedItem = { ...item, addedToCart: true };
+    console.log('Producto que se está agregando al carrito:', item);
+
+    dispatch(
+      cartActions.addItem({
+        id: updatedItem.id,
+        productName: updatedItem.productName,
+        price: updatedItem.price,
+        imgUrl: updatedItem.imgUrl,
+      })
+    );
+  
+    toast.success('Producto añadido');
+  };
   useEffect(() => {
     window.scroll(0,0)
   },[product])
@@ -120,11 +130,11 @@ const ProductDeatils = () => {
                           </div>
 
                           <div className="form__group d-flex align-items-center gap-5 rating__group">
-                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(1)}>1<i class="ri-star-fill"></i></motion.span>
-                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(2)}>2<i class="ri-star-fill"></i></motion.span>
-                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(3)}>3<i class="ri-star-fill"></i></motion.span>
-                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(4)}>4<i class="ri-star-fill"></i></motion.span>
-                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(5)}>5<i class="ri-star-fill"></i></motion.span>
+                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(1)}>1<i className="ri-star-fill"></i></motion.span>
+                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(2)}>2<i className="ri-star-fill"></i></motion.span>
+                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(3)}>3<i className="ri-star-fill"></i></motion.span>
+                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(4)}>4<i className="ri-star-fill"></i></motion.span>
+                            <motion.span whileTap={{scale:1.2}} onClick={()=> setRating(5)}>5<i className="ri-star-fill"></i></motion.span>
                           </div>
 
                           <div className="form__group">
